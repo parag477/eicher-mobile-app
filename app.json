@@ -3,6 +3,10 @@
     "name": "eicher-mobile-app",
     "slug": "eicher-mobile-app",
     "version": "1.0.0",
+    "platforms": [
+      "android",
+      "ios"
+    ],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -15,6 +19,8 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.parag477.wificredentialsmanager",
+      "permissions": ["ACCESS_WIFI_STATE", "CHANGE_WIFI_STATE"],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -22,6 +28,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c1bdb13f-1e74-4ef6-8b10-5bce54ca8e7a"
+      }
     }
   }
 }
